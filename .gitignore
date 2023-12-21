@@ -1,0 +1,21 @@
+**/*.npy
+**/*.idea
+**/*.pyc
+**/*.DS_Store
+**/*.log
+**/*.png
+**/*.csv
+**/*.zip
+**/*.swp
+**/*ft_local
+.vscode
+.temp
+.ipynb_checkpoints
+*.sh
+*.pyc
+*.DS_Store
+__pycache__
+
+# bkdevops prebuild
+.bk_pb/
+build.yml

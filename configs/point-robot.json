@@ -1,0 +1,29 @@
+{
+    "env_name": "point-robot",
+    "n_train_tasks": 10,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "n_tasks": 20,
+        "max_episode_steps": 20
+    },
+    "net_size":64,
+    "algo_params": {
+        "meta_batch":10,
+        "num_iterations": 500,
+        "num_initial_steps": 200,
+        "num_steps_prior": 400,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 400,
+        "num_train_steps_per_itr": 400,
+        "embedding_batch_size": 256,
+        "embedding_mini_batch_size": 256,
+        "discount": 0.90,
+        "n_trj": 100,
+        "train_epoch":1e5,
+        "eval_epoch": 1e5,
+        "sample": 1,
+        "max_path_length": 20,
+        "data_dir": "/data/zrz/gentle_data/point-robot",
+        "online_sample_num": 20
+    }
+}

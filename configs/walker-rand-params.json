@@ -1,0 +1,27 @@
+{
+    "env_name": "walker-rand-params",
+    "n_train_tasks": 10,
+    "n_eval_tasks": 10,
+    "latent_size":10,
+    "env_params": {
+        "n_tasks": 20,
+        "randomize_tasks": 0
+    }
+    ,
+    "algo_params": {
+        "use_next_obs_in_context": true,
+        "meta_batch": 10,
+        "num_initial_steps": 2000,
+        "num_steps_prior": 400,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 600,
+        "num_train_steps_per_itr": 400,
+        "embedding_batch_size": 256,
+        "embedding_mini_batch_size": 256,
+        "sample":1,
+        "data_dir": "/data/zrz/gentle_data/walker-rand-params",
+        "train_epoch": 1e6,
+        "eval_epoch": 1e6,
+        "n_trj": 50
+    }
+}
