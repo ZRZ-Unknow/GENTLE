@@ -38,10 +38,13 @@ Data will be saved in `self.work_dir/gentle_data/$env_name/$goal_idx{i}`
 
 ## Training GENTLE 
 
-The configration files to run GENTLE is in `./configs`. For example, to train GENTLE on Ant-Dir, run:
-
+The configration files to run GENTLE is in `./configs`. For example, to train GENTLE on Ant-Dir, first you need to pretrain the dynamics model:
 ```bash
-python train_gentle.py ./configs/ant-dir.json --gpu 0
+python pretrain_dynamics.py ./configs/ant-dir.json 
+```
+Then run:
+```bash
+python train_gentle.py ./configs/ant-dir.json
 ```
 
 Logs will be written to `./logs/ant-dir/gentle/`
