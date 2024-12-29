@@ -31,7 +31,7 @@ It will run SAC to train a policy on each task, you can modify `self.work_dir` o
 Generate trajectories from trained policies:
 
 ```bash
-python policy_eavl.py --config ./configs/ant-dir.json
+python policy_eval.py --config ./configs/ant-dir.json
 ```
 
 Data will be saved in `self.work_dir/gentle_data/$env_name/$goal_idx{i}`

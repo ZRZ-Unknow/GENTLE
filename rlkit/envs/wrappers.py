@@ -60,7 +60,7 @@ class NormalizedBoxEnv(ProxyEnv, Serializable):
         # Or else serialization gets delegated to the wrapped_env. Serialize
         # this env separately from the wrapped_env.
         self._serializable_initialized = False
-        self._should_normalize = True
+        self._should_normalize = False
         Serializable.quick_init(self, locals())
         ProxyEnv.__init__(self, env)
 
